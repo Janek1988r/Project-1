@@ -1,0 +1,20 @@
+/*Czcionka roboto regular*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Czcionka roboto bold*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/*Czcionka roboto italic*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+#{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width:960px;
+}
+.section_1{
+    height: 100vh;
+    background-image: url(koncert1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
