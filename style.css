@@ -1,10 +1,11 @@
 /*Czcionka roboto regular*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /*Czcionka roboto bold*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-/*Czcionka roboto italic*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
 /*font-family: 'Roboto', sans-serif;*/
+
 * {
   box-sizing: border-box;
 }
@@ -132,7 +133,7 @@ section {
   text-align: right;
 }
 .opis {
-  width: 700px;
+  width: 75%;
 }
 .blue {
   background-color: #405d78;
