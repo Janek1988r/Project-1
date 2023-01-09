@@ -9,8 +9,21 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding: 10px 0;
+}
 p {
   font-family: "Roboto", sans-serif;
+}
+i {
+  font-size: xx-large;
+  margin-left: 10px;
+}
+footer {
+  background-color: rgba(83, 82, 82, 1);
 }
 .h1 {
   font-size: xx-large;
@@ -39,9 +52,6 @@ p {
 }
 h3 {
   font-weight: bold;
-}
-section {
-  height: 600px;
 }
 .container {
   display: flex;
@@ -141,25 +151,23 @@ section {
 .uslugi {
   display: grid;
   grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 200px 200px;
   gap: 50px;
   justify-content: center;
   align-content: center;
 }
 .uslugi > div {
+  display: flex;
   background-color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
   text-align: center;
-  padding: 40px 10px;
+  justify-content: center;
+  padding: 5px;
 }
-footer {
-  background-color: rgba(83, 82, 82, 1);
+#footer {
+  display: flex;
   padding: 10px 0;
   align-items: center;
-}
-i {
-  font-size: xx-large;
-  margin-left: 10px;
 }
 .button_oferta {
   background-color: rgba(255, 255, 255, 0);
@@ -171,8 +179,31 @@ i {
   font-family: "Roboto", sans-serif;
   font-size: medium;
 }
-html {
-  scroll-behavior: smooth;
+#new {
+  position: relative;
+  padding-top: 10px;
+}
+#new::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  background-color: rgb(233, 100, 100);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+.button_oferta:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition-duration: 1s;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+.uslugi > div:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
 a:link {
   color: rgb(255, 255, 255);
@@ -189,30 +220,4 @@ a:hover {
 a:active {
   color: rgb(255, 255, 255);
   text-decoration: none;
-}
-.button_oferta:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  transition-duration: 1s;
-}
-.disabled:hover {
-  cursor: not-allowed;
-}
-.uslugi > div:hover {
-  transform: scale(1.05);
-  transition-duration: 0.5s;
-}
-#new {
-  position: relative;
-  padding-top: 10px;
-}
-#new::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  background-color: rgb(233, 100, 100);
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
 }
